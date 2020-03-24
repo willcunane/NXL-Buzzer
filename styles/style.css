@@ -3,6 +3,8 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
 }
 #container {
     text-align: center;
@@ -30,6 +32,8 @@ body {
     padding-right: 30px;
     font-weight: bold;
     margin-right: 10px;
+    color: white;
+    font-size: 18px;
 }
 
 #stop-timer {
@@ -40,8 +44,11 @@ body {
     padding-right: 30px;
     font-weight: bold;
     margin-left: 10px;
+    color: white;
+    font-size: 18px;
 }
 #flip-deck {
+    font-size: 22px;
     background-color: blue;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -49,4 +56,58 @@ body {
     padding-right: 30px;
     font-weight: bold;
     margin-top: 20px;
+    color: white;
+    width: 240px;
+}
+
+#break-time {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 2px;
+    margin-left: 42vh;
+    margin-right: 42vh;
+}
+
+#game-time {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 2px;
+    margin-left: 42vh;
+    margin-right: 42vh;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#time {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#match-time {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.timer {
+    padding-top: 5px;
+}
+
+#add-score {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 5px;
+    background-color: green;
+    color: white;
+    width: 120px;
+    height: 40px;
+}
+
+#remove-score {
+    font-weight: bold;
+    font-size: 18;
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+    width: 80px;
+    height: 30px;
 }

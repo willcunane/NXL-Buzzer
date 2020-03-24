@@ -15,23 +15,30 @@
         <div id="container">
             <div class="Team1">
                 <h1 id="team-1">Team 1</h1>
-                <h1 id="team-1-score">0</h1>
-                <button type="button" id="" onclick="addScoreTeam1()">+1</button>
-                <button type="button" id="" onclick="removeScoreTeam1()">-1</button>
+                <h1 id="team1scoreHTML">0</h1>
+                <button type="button" id="add-score" onclick="addScoreTeam(team1Score, team1scoreHTML.id)">+1</button><br>
+                <button type="button" id="remove-score" onclick="removeScoreTeam(team1Score, team1scoreHTML.id)">-1</button><br>
             </div>
 
             <div class="Team2">
                 <h1 id="team-2">Team 2</h1>
-                <h1 id="team-2-score">0</h1>
-                <button type="button" id="" onclick="addScoreTeam2()" value="">+1</button>
-                <button type="button" id="" onclick="removeScoreTeam2()">-1</button>
+                <h1 id="team2scoreHTML">0</h1>
+                <button type="button" id="add-score" onclick="addScoreTeam(team2Score, team2scoreHTML.id)" value="">+1</button><br>
+                <button type="button" id="remove-score" onclick="removeScoreTeam(team2Score, team2scoreHTML.id)">-1</button><br>
             </div>
 
             <div class="timer">
-                <h1 id="time">12:00</h1>
+                <div id="break-time">
+                    <h1 id="time">Break Time</h1>
+                    <h1 id="time">2:00</h1>
+                </div>
+                <div id="game-time">
+                    <h1 id="time">Game Time</h1>
+                    <h1 id="match-time">12:00</h1>
+                </div>
                 <button type="button" id="start-timer" onclick="displayTimer()">START</button>
                 <button type="button" id="stop-timer" onclick="stopTimer()">STOP</button><br>
-                <button type="button" id="flip-deck" onclick="flipMatchDeck()">FIP DECK</button><br>
+                <button type="button" id="flip-deck" onclick="flipMatchDeck()">FLIP DECK</button><br>
             </div>
             
 

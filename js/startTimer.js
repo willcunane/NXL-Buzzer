@@ -1,25 +1,21 @@
 var update;
 
 function displayTimer() {
-    var currentMatchTimer = document.getElementById("time").innerHTML;
+    var currentMatchTimer = document.getElementById("match-time").innerHTML;
     var currentMinutes = parseInt(currentMatchTimer.split(':')[0]),
         currentSeconds = parseInt(currentMatchTimer.split(':')[1]);
 
 
 
     var matchTimer = currentMinutes * 60 + currentSeconds,
-        display = document.querySelector('#time');
+        display = document.querySelector('#match-time');
 
-    console.log('currentMinutes', currentMinutes);
-    console.log('currentSeconds', currentSeconds);
-    console.log('matchTimer', matchTimer);
 
     startTimer(matchTimer, display);
 };
 
 function startTimer(duration, display) {
-    var currentMatchTimer = document.getElementById("time").innerHTML;
-    console.log('startTimer() currentMatchTimer', currentMatchTimer);
+    var currentMatchTimer = document.getElementById("match-time").innerHTML;
 
     var start = Date.now(),
         diff,
@@ -52,4 +48,6 @@ function startTimer(duration, display) {
 
 function stopTimer() {
     clearInterval(update);
+    
+    console.log()
 }
