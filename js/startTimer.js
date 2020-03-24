@@ -1,7 +1,26 @@
-var match1timer = 12
-var match2timer = 12
+var update;
+
+function displayTimer() {
+    var currentMatchTimer = document.getElementById("time").innerHTML;
+    var currentMinutes = parseInt(currentMatchTimer.split(':')[0]),
+        currentSeconds = parseInt(currentMatchTimer.split(':')[1]);
+
+
+
+    var matchTimer = currentMinutes * 60 + currentSeconds,
+        display = document.querySelector('#time');
+
+    console.log('currentMinutes', currentMinutes);
+    console.log('currentSeconds', currentSeconds);
+    console.log('matchTimer', matchTimer);
+
+    startTimer(matchTimer, display);
+};
 
 function startTimer(duration, display) {
+    var currentMatchTimer = document.getElementById("time").innerHTML;
+    console.log('startTimer() currentMatchTimer', currentMatchTimer);
+
     var start = Date.now(),
         diff,
         minutes,
@@ -28,17 +47,9 @@ function startTimer(duration, display) {
     };
     // we don't want to wait a full second before the timer starts
     timer();
-    update = setInterval(timer, currentMatchTimer);
+    update = setInterval(timer, 1000);
 }
 
-    function displayTimer() {
-    var matchTimer = 60 * match1timer,
-        display = document.querySelector('#time');
-    startTimer(matchTimer, display);
-};
-
-    function stopTimer() {
-        var currentMatchTimer = document.getElementById("time").innerHTML;
-            console.log(currentMatchTimer);
-        clearInterval(update);
-    }
+function stopTimer() {
+    clearInterval(update);
+}
