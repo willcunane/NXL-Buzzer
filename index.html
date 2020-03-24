@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+        <script type="text/javascript" src="js/startTimer.js"></script>
+        <script type="text/javascript" src="js/scoreTracker.js"></script>
+        <script type="text/javascript" src="js/flipDeck.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <div class="Team1">
+                <h1 id="team-1">Team 1</h1>
+                <h1 id="team-1-score">0</h1>
+                <button type="button" id="" onclick="addScoreTeam1()">+1</button>
+                <button type="button" id="" onclick="removeScoreTeam1()">-1</button>
+            </div>
+
+            <div class="Team2">
+                <h1 id="team-2">Team 2</h1>
+                <h1 id="team-2-score">0</h1>
+                <button type="button" id="" onclick="addScoreTeam2()" value="">+1</button>
+                <button type="button" id="" onclick="removeScoreTeam2()">-1</button>
+            </div>
+
+            <div class="timer">
+                <h1 id="time">12:00</h1>
+                <button type="button" id="start-timer" onclick="displayTimer()">START</button>
+                <button type="button" id="stop-timer" onclick="stopTimer()">STOP</button><br>
+                <button type="button" id="flip-deck" onclick="flipMatchDeck()">FIP DECK</button><br>
+            </div>
+            
+
+        </div>
+    </body>
+</html>
