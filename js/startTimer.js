@@ -28,7 +28,7 @@ function startTimer(duration, display) {
     };
     // we don't want to wait a full second before the timer starts
     timer();
-    setInterval(timer, 1000);
+    update = setInterval(timer, currentMatchTimer);
 }
 
     function displayTimer() {
@@ -40,5 +40,5 @@ function startTimer(duration, display) {
     function stopTimer() {
         var currentMatchTimer = document.getElementById("time").innerHTML;
             console.log(currentMatchTimer);
-        clearInterval(currentMatchTimer);
+        clearInterval(update);
     }
