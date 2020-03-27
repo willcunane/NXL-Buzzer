@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#container {
+
+}
+
+.Team1 {
+    text-align: left;
+    float: left;
+    width: 90%;
+    margin-left: 4%;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* border-style: solid; */
+    /* border-color: white;
+    background-color: white; */
+    border-radius: 25px;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+#team-1 {
+    width: 80%;
+    display: inline-block;
+}
+#team1scoreHTML {
+    text-align: right;
+    float: right;
+}
+.Team2 {
+    text-align: left;
+    float: left;
+    width: 90%;
+    margin-left: 4%;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* border-style: solid; */
+    /* border-color: white;
+    background-color: white; */
+    border-radius: 25px;
+    margin-top: 5em;
+}
+#team-2 {
+    width: 80%;
+    display: inline-block;
+}
+#team2scoreHTML {
+    text-align: right;
+    float: right;
+}

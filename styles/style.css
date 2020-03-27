@@ -65,19 +65,21 @@ body {
     border-color: white;
     border-width: 5px;
     border-radius: 2px;
-    margin-left: 42vh;
-    margin-right: 42vh;
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
 }
 
 #game-time {
+    width: 30%;
     border-style: solid;
     border-color: white;
     border-width: 5px;
     border-radius: 2px;
-    margin-left: 42vh;
-    margin-right: 42vh;
     margin-top: 30px;
     margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #time {
@@ -110,4 +112,25 @@ body {
     color: white;
     width: 80px;
     height: 30px;
+}
+
+#break-control {
+    width: 30%;
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    border-radius: 2px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.control-btn {
+    background-color: black;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.control-btn :active {
+    background-color: red;
 }
